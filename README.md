@@ -3,7 +3,7 @@ Going through common Data Structures, Algorithms, and their practical implementa
 
 ## Data Structures
 
-- [Dynamic Array](./data-structures/dynamic_array.md)
+- [Dynamic Array](./data-structures/dynamic_array/)
 - Linked List
 - Stack & Queue
 - Hash Tables
