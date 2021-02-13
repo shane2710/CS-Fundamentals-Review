@@ -2,7 +2,7 @@
 
 From [Wikipedia](https://www.wikiwand.com/en/Dynamic_array):
 
-"*a dynamic array, growable array, resizable array, dynamic table, mutable array, or array list is a random access, variable-size list data structure that allows elements to be added or removed.*"
+> *a dynamic array, growable array, resizable array, dynamic table, mutable array, or array list is a random access, variable-size list data structure that allows elements to be added or removed.*
 
 Translation.... just any old array on the heap in C, list() in python, etc.
 
