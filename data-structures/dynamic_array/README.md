@@ -28,21 +28,21 @@ Translation.... just any old array on the heap in C, list() in python, etc.
 - An array declared w/ fixed length is allocated on the stack and cannot
   be dynamically resized
 
-- Dynamic arrays are allocated at runtime on the heap via malloc() or similar
+- Dynamic arrays are allocated at runtime on the heap via `malloc()` or similar
   calls, and must be freed manually once their scope has run its course
 
-- Resizing a dynamic array with realloc() may return a pointer to a completely
+- Resizing a dynamic array with `realloc()` may return a pointer to a completely
   new starting memory address for the array, meaning the memory was copied to a
   larger block (expensive!)
 
-- The sizeof operator can not return the size of a dynamically allocated
+- The `sizeof()` function can not return the size of a dynamically allocated
   buffer, only the size of static types and structs known at compile time
 
 ###### General:
 
 - Simple Makefile review [here](https://cs.colby.edu/maxwell/courses/tutorials/maketutor/) and [here](https://makefiletutorial.com/)
 
-- Info on rand() usage [here](https://stackoverflow.com/questions/822323/how-to-generate-a-random-int-in-c)....  be aware of RAND_MAX, and srand(unsigned int seed), setting via current system time
+- Info on `rand()` usage [here](https://stackoverflow.com/questions/822323/how-to-generate-a-random-int-in-c)....  be aware of `RAND_MAX`, and `srand(unsigned int seed)`, setting via current system time
 
 
 #### Python:
