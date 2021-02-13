@@ -25,7 +25,7 @@ void printArray(int *array, int size) {
 }
 
 int main(int argc, char *argv[]) {
-    size_t arraySize = 0;
+    int arraySize = 0;
 
     switch (argc) {
         case 1:
@@ -33,6 +33,10 @@ int main(int argc, char *argv[]) {
             break;
         case 2:
             arraySize = atoi(argv[1]);
+            if (!arraySize) {
+                printf("invalid size specified: %s\n", argv[1]);
+                return 1;
+            }
             break;
         default:
             printf("Usage: %s {size}\n", argv[0]);
