@@ -5,7 +5,7 @@ Going through common Data Structures, Algorithms, and their practical implementa
 
 - [Dynamic Array](./data-structures/dynamic_array/)
 - [Linked List](./data-structures/linked_list/)
-- Stack & Queue
+- [Stack & Queue](./data-structures/stack_queue/)
 - Hash Tables
 - Binary Search Tree
 - Binary Heaps & Priority Queue

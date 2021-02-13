@@ -18,15 +18,31 @@
 
 ###### Usage:
 
+- Compile via `make`
+
+- Run via `./stack.out`
+
 ###### Stack / Queue:
 
+- Easy stack implementation uses underlying linked list, which we had already
+  built
+
+- Need to pass pointer to Stack `&stack` in order to modify where the stack
+  points after `push()` or `pop()`
+
 ###### General:
+
+- Include header files from other directories with `CCFLAGS = -I(dirpath)`
+  within `Makefile`
 
 #### Python:
 
 ###### Usage:
 
 ###### Stack / Queue:
+
+- A `list()` in Python is easily used as a stack since it contains `push()` and
+  `pop()`
 
 ###### General:
 
