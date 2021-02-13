@@ -4,7 +4,8 @@ From [Wikipedia](https://www.wikiwand.com/en/Linked_list):
 
 > *a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.  In its most basic form, each node contains: data, and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration.*
 
-A chain of linked nodes, located in disparate parts of memory.
+A chain of linked nodes, located in disparate parts of memory.  More reading
+[here](https://www.geeksforgeeks.org/data-structures/linked-list/).
 
 ## Key Takeaways:
 
@@ -63,6 +64,25 @@ A chain of linked nodes, located in disparate parts of memory.
 
 #### Python:
 
+###### Usage:
+
+`python linked_list.py`
+
 ###### Linked List:
 
+- Create separate LinkedList and Node classes for easy data management
+
+- Use `__repr__` class function to readily print LinkedList and Nodes
+
+- Use `yield` within `__iter__` to access LinkedList as an iterable
+
+- Good reading on LinkedLists in Python [here](https://realpython.com/linked-lists-python/)
+
 ###### General:
+
+- Generate random integers with `randint(start, stop)` via `import random`
+
+- Use `collections.deque` for a double-ended queue that supports `deque.pop()`,
+  `deque.append()`, `deque.popleft()`, `deque.appendleft()` which is very
+  useful given the `{}left()` functions allowing one to use `deque()` to access
+  front of list in constant time as well as back
