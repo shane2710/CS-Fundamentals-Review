@@ -2,9 +2,9 @@
 
 From [Wikipedia](https://www.wikiwand.com/en/Linked_list):
 
-*a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.
+"*a linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.
 
-In its most basic form, each node contains: data, and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration.*
+In its most basic form, each node contains: data, and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration.*"
 
 A chain of linked nodes, located in disparate parts of memory.
 
@@ -41,7 +41,7 @@ A chain of linked nodes, located in disparate parts of memory.
 
 - Recursively call `free()` to free entire list
 
-- Defining new types in C containing pointers to themselves requires defining type then defining struct, called a [Forward Definition](https://stackoverflow.com/questions/3988041/how-to-define-a-typedef-struct-containing-pointers-to-itself)
+- Defining new types in C containing pointers to themselves requires defining type then defining struct, called a [Forward Declaration](https://stackoverflow.com/questions/3988041/how-to-define-a-typedef-struct-containing-pointers-to-itself)
 
     - for example:
         ```
