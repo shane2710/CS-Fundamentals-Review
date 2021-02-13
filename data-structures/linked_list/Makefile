@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS= -g3 -O0 -Wall
+CFLAGS= -I. -g3 -O0 -Wall
 
 
 linked_list: linked_list.o
