@@ -35,6 +35,12 @@ A chain of linked nodes, located in disparate parts of memory.
 
 #### C:
 
+###### Usage:
+
+- Compile with `make`
+
+- Run with `./linked_list.out {size}`
+
 ###### Linked List:
 
 - Recursively call `free()` to free entire list
@@ -53,7 +59,7 @@ A chain of linked nodes, located in disparate parts of memory.
 
 ###### General:
 
-- `abs(x)` in `<stdlib.h>` returns absolute value of int x
+- `abs(x)` in `<stdlib.h>` returns absolute value of `int x`
 
 #### Python:
 

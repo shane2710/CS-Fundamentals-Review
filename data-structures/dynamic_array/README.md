@@ -23,6 +23,12 @@ Translation.... just any old array on the heap in C, list() in python, etc.
 
 #### C:
 
+###### Usage:
+
+- Compile with `make`
+
+- Run with `./dynamic_array.out {size}`
+
 ###### Dynamic Array:
 
 - An array declared w/ fixed length is allocated on the stack and cannot
