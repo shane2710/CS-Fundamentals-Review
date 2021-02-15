@@ -14,18 +14,20 @@ Going through common Data Structures, Algorithms, and their practical implementa
 
 ## Algorithms
 
-- Bit Manipulation & Numbers — difference btw Unsigned vs signed numbers
+- Bit Manipulation & Numbers — difference btw unsigned vs signed numbers
 - Stability in Sorting
 - Mergesort
 - Quicksort
 - Heapsort — Sort it in-place to get O(1) space
+- [Treesort](https://www.wikiwand.com/en/Tree_sort) (useful for online
+  processing w/ self-balancing tree)
 - Binary Search- - Selections — Kth Smallest Elements (Sort, QuickSelect, Mediums of Mediums) — Implement all three ways
 - Permutations
 - Subsets
 - BFS Graph
 - DFS Graph
 - Dijkstra’s Algorithm (just learn the idea — no need to implement)
-- Tree Traversals — BFS, DFS (in-order, pre-order, post-order): Implement Recursive and Iterative
+- Tree Traversals — BFS, DFS (in-order, pre-order, post-order): Implement Recursive and Iterative - [good graphic on DFS](https://www.wikiwand.com/en/Tree_traversal#/Depth-first_search_of_binary_tree)
 - External Sort — No implementation; Just know the concept.
 - NP-Complete (Video) — Just know the concept
 - Topological Sort
@@ -47,8 +49,7 @@ Going through common Data Structures, Algorithms, and their practical implementa
 - Print binary tree using DFS (in-order, preorder and post order — all three of them) and BFS.
 - Memorize [time & space complexities](https://www.bigocheatsheet.com/) for common algorithms.
 - Implement a trie.
-- Learn
-  [these](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) important bit manipulation tricks.
+- Learn [these](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) important bit manipulation tricks.
 
 
 *The above list of review topics was inspired by
