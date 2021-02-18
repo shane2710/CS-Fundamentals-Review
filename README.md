@@ -8,7 +8,7 @@ Going through common Data Structures, Algorithms, and their practical implementa
 - [Stack & Queue](./data-structures/stack_queue/)
 - Hash Tables
 - [Binary Search Tree](./data-structures/binary_search_tree/)
-- Binary Heaps & Priority Queue
+- [Binary Heaps & Priority Queue](./data-structures/heap/)]
 - Graphs
 - Trie
 
