@@ -1,18 +1,26 @@
 # Graph
 
-[Graph](https://www.wikiwand.com/en/Heap_(data_structure\))
+[Graph](https://www.wikiwand.com/en/Graph_(abstract_data_type))
 
->*A excerpt here*
+>*A graph data structure consists of a finite (and possibly mutable) set of vertices (also called nodes or points), together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph. These pairs are known as edges (also called links or lines), and for a directed graph are also known as arrows.*
 
 [here](https://www.geeksforgeeks.org/data-structures/linked-list/).
 
 ## Key Takeaways:
 
-- 
+- Graphs can be undirected / directed, and unweighted / weighted
 
-#### Advantages:
+#### Representations:
 
-- 
+- Data structure relations:
+
+Adjacency list[2]
+    Vertices are stored as records or objects, and every vertex stores a list of adjacent vertices. This data structure allows the storage of additional data on the vertices. Additional data can be stored if edges are also stored as objects, in which case each vertex stores its incident edges and each edge stores its incident vertices.
+Adjacency matrix[3]
+    A two-dimensional matrix, in which the rows represent source vertices and columns represent destination vertices. Data on edges and vertices must be stored externally. Only the cost for one edge can be stored between each pair of vertices.
+
+
+- Adjacency lists are generally preferred because they efficiently represent sparse graphs. An adjacency matrix is preferred if the graph is dense, that is the number of edges |E | is close to the number of vertices squared, |V |2, or if one must be able to quickly look up if there is an edge connecting two vertices.
 
 #### Disadvantages:
 
@@ -30,6 +38,8 @@
 ###### General:
 
 #### Python:
+
+- This implementation uses an adjacency list
 
 ###### Usage:
 
