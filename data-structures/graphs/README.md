@@ -43,7 +43,7 @@
 
 - Tuples are hashable to add into a set, but the order of items in the tuple matter.. the following code snippet **does not** filter out duplicate edge pairs as I first expected:
 
-    ```
+    ```python
 	def getEdges(self):
         edgeset = set()
         for vert,edges in self.graph.items():
@@ -61,7 +61,7 @@ So, how do we create a set of vertice pairs containing unique pairs?  Well, sinc
 
 However, sets are mutable in Python, so [we can't nest normal sets](https://stackoverflow.com/questions/5931291/how-can-i-create-a-set-of-sets-in-python)... to work around this, declare the inner set as a [frozenset](https://docs.python.org/2/library/stdtypes.html#frozenset) which promises Python that we won't modify it and thus it becomes hashable!
 
-	```
+	```python
 	def getEdges(self):
         edgeset = set()
         for vert,edges in self.graph.items():

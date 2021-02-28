@@ -55,7 +55,8 @@
 ###### General:
 
 - Declare private data and functions with '\_' prefix:
-    ```
+
+    ```python
     class Max_Heap:
 		def __init__(self, arr=[]):
 			self._heap = []

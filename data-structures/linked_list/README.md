@@ -49,7 +49,7 @@ A chain of linked nodes, located in disparate parts of memory.  More reading
 - Defining new types in C containing pointers to themselves requires defining type then defining struct, called a [Forward Declaration](https://stackoverflow.com/questions/3988041/how-to-define-a-typedef-struct-containing-pointers-to-itself)
 
     - for example:
-        ```
+        ```c++
         typedef struct Node Node;
 
         struct Node {
