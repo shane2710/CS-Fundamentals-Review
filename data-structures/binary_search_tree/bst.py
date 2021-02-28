@@ -47,12 +47,26 @@ class Node:
             self.data = successor.data
             successor.delete(successor.data, self)
         elif (self.left):
-            self.data = self.left.data
-            self.left.delete(self.left.data, self)
+            # instead of iteratively deleting
+            # children nodes, should just link parent left / right directly to 
+            # deleted node left / right
+            if (parent and parent.data < self.data):
+                parent.right = self.left
+            elif (parent and parent.data > self.data):
+                parent.left = self.left
+            else:
+                self.data = self.left.data
+                self.left.delete(self.left.data, self)
         elif (self.right):
-            self.data = self.right.data
-            self.right.delete(self.right.data, self)
+            if (parent and parent.data < self.data):
+                parent.right = self.right
+            elif (parent and parent.data > self.data):
+                parent.left = self.right
+            else:
+                self.data = self.right.data
+                self.right.delete(self.right.data, self)
         else:
+            # arrived at leaf node
             if (parent):
             # not removing root node
                 if (parent.left and parent.left.data == self.data):
