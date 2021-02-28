@@ -43,5 +43,7 @@ Traversal, searching... [trees](../data-structures/binary-search-tree/)
 ```python
 ```
 
+- [More reading on relative imports as an anti-pattern in Python](https://stackoverflow.com/questions/16981921/relative-imports-in-python-3)
+
 ##TODO:  add in code snippets here of inheritance from tree class, extending
 ## with methods for in order and post order traversal
