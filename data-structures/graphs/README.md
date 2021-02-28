@@ -53,13 +53,13 @@
         return edgeset
 	```
 
-	returns:
+	returns duplicate edges:
 
 	`{('b', 'd'), ('c', 'a'), ('b', 'a'), ('a', 'b'), ('e', 'd'), ('a', 'c'), ('c', 'd'), ('d', 'e')}`
 
-So, how do we create a set of vertice pairs containing unique pairs?  Well, since the vertice pairs must be unique, let's store them as sets, then form a set of these sets.
+- So, how do we create a set of vertice pairs containing unique pairs?  Well, since the vertice pairs must be unique, let's store them as sets, then form a set of these sets.
 
-However, sets are mutable in Python, so [we can't nest normal sets](https://stackoverflow.com/questions/5931291/how-can-i-create-a-set-of-sets-in-python)... to work around this, declare the inner set as a [frozenset](https://docs.python.org/2/library/stdtypes.html#frozenset) which promises Python that we won't modify it and thus it becomes hashable!
+	However, sets are mutable in Python, so [we can't nest normal sets](https://stackoverflow.com/questions/5931291/how-can-i-create-a-set-of-sets-in-python)... to work around this, declare the inner set as a [frozenset](https://docs.python.org/2/library/stdtypes.html#frozenset) which promises Python that we won't modify it and thus it becomes hashable!
 
 	```python
 	def getEdges(self):
@@ -72,7 +72,7 @@ However, sets are mutable in Python, so [we can't nest normal sets](https://stac
         return [tuple(e) for e in edgeset]
 	```
 
-	returns:
+	returns unique edges:
 
 	`[('c', 'a'), ('b', 'a'), ('c', 'd'), ('b', 'd'), ('d', 'e')]`
 	
