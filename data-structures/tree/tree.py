@@ -66,6 +66,19 @@ class Tree:
             else:
                 self.root = None
 
+    def dfs(self, val):
+        return self._dfs(self.root, val)
+
+    def _dfs(self, node, val):
+        if node.left and self._dfs(node.left, val):
+            return True
+        if node.val == val:
+            return True
+        if node.right and self._dfs(node.right, val):
+            return True
+        return False
+
+
     def getValues(self):
         return self.traverseInOrder(self.root)
 
